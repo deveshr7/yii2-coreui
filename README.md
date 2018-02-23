@@ -24,14 +24,14 @@ to the `require` section of your `composer.json` file.
 
 ### 1. Usage with Gulp
 
-Read the [Documentation](https://github.com/kmergen/yii2-coreui-gulp)
+Read the [Example Documentation](https://github.com/kmergen/yii2-coreui/blob/master/exmaples/README.md)
 
 ### 1. Usage with common Yii2 assets
 
 - The extension include all needed files for the CoreUI Admin Theme
 - Create an asset with the needed files for your project
 - Register the asset in your theme layout file and you are ready to go.
-- You can also use the the layout file from [here](https://github.com/kmergen/yii2-coreui-gulp), which you can then adapt to your needs.
+- You can also use the the layout file from [here](https://github.com/kmergen/yii2-coreui/blob/master/exmaples/themes/coreui/views/layouts/main.php), which you can then adapt to your needs.
 
 
 > Note: This extension is under development. Use it not in production.
