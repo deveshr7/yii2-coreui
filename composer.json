@@ -1,0 +1,22 @@
+{
+    "name": "kmergen/yii2-coreui-gulp",
+    "description": "CoreUI Admin Theme for Yii2 with widgets and examples to use with Gulp",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "keywords": ["yii", "yii2", "extension", "assets", "theme"],
+    "authors": [
+        {
+            "name": "Klaus Megen",
+            "email": "kmergenweb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "kmergen\\coreui\\": ""
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.1.0"
+    }
+}
