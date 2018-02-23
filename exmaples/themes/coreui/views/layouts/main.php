@@ -3,9 +3,9 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use backend\themes\coreui\widgets\Alert;
-use backend\themes\coreui\widgets\Sidebar;
-use backend\themes\coreui\widgets\Breadcrumbs;
+use kmergen\coreui\widgets\Alert;
+use kmergen\coreui\widgets\Sidebar;
+use kmergen\coreui\widgets\Breadcrumbs;
 
 $user = Yii::$app->getUser()->getIdentity();
 $profile = $user->profile;

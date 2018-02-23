@@ -15,14 +15,25 @@ var gulp = require('gulp');
 var coreuiSourceDir = 'coreui_source/Static_Full_Project_GULP';
 
 
+//################################ Patches Tasks ########################################
+gulp.task('patch:style', function () {
+    return gulp.src(['patches/style.scss'])
+        .pipe(gulp.dest('src/scss'));
+});
+
 //################################ Copy Tasks ########################################
+
 gulp.task('copy:img', function () {
     return gulp.src([coreuiSourceDir + '/src/img/**/*'])
         .pipe(gulp.dest('src/img'));
 });
 
 gulp.task('copy:scss', function () {
-    return gulp.src([coreuiSourceDir + '/src/scss/**/*'])
+    return gulp.src([
+        coreuiSourceDir + '/src/scss/**/*',
+        '!' + coreuiSourceDir + '/src/scss/style.scss',
+        '!' + coreuiSourceDir + '/src/scss/_custom.scss'
+    ])
         .pipe(gulp.dest('src/scss'));
 });
 
@@ -41,5 +52,6 @@ gulp.task('copy:jsViews', function () {
 });
 
 gulp.task('copy', ['copy:img', 'copy:scss', 'copy:js', 'copy:jsViews']);
+gulp.task('patch', ['patch:style']);
 
-gulp.task('serve', ['copy']);
+gulp.task('serve', ['copy', 'patch']);
