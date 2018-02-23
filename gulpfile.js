@@ -14,13 +14,6 @@ var gulp = require('gulp');
  */
 var coreuiSourceDir = 'coreui_source/Static_Full_Project_GULP';
 
-
-//################################ Patches Tasks ########################################
-gulp.task('patch:style', function () {
-    return gulp.src(['patches/style.scss'])
-        .pipe(gulp.dest('src/scss'));
-});
-
 //################################ Copy Tasks ########################################
 
 gulp.task('copy:img', function () {
@@ -52,6 +45,4 @@ gulp.task('copy:jsViews', function () {
 });
 
 gulp.task('copy', ['copy:img', 'copy:scss', 'copy:js', 'copy:jsViews']);
-gulp.task('patch', ['patch:style']);
-
-gulp.task('serve', ['copy', 'patch']);
+gulp.task('serve', ['copy']);
