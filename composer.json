@@ -1,5 +1,5 @@
 {
-    "name": "kmergen/yii2-coreui-gulp",
+    "name": "kmergen/yii2-coreui",
     "description": "CoreUI Admin Theme for Yii2 with widgets and examples to use with Gulp",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
