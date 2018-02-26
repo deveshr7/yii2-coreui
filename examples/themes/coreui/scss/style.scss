@@ -18,5 +18,9 @@
 // Import core styles
 @import "../../../../vendor/kmergen/yii2-coreui/src/scss/core/core";
 
+// Import custom variables
+@import "custom-variables";
+
 // Import custom styles
 @import "custom";
+
