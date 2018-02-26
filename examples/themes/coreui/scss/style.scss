@@ -7,19 +7,16 @@
  */
 
 // Override Boostrap variables
-@import "../../../../vendor/kmergen/yii2-coreui/src/scss/bootstrap-variables";
+@import "bootstrap-variables";
 
 // Import Bootstrap source files
 @import "../../../../vendor/kmergen/yii2-coreui/src/node_modules/bootstrap/scss/bootstrap";
 
 // Override core variables
-@import "../../../../vendor/kmergen/yii2-coreui/src/scss/core-variables";
+@import "core-variables";
 
 // Import core styles
 @import "../../../../vendor/kmergen/yii2-coreui/src/scss/core/core";
-
-// Import custom variables
-@import "custom_variables";
 
 // Import custom styles
 @import "custom";

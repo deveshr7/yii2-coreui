@@ -99,9 +99,9 @@ gulp.task('copy', ['copy:img', 'copy:fonts']);
 //################################ CSS build Tasks ########################################
 gulp.task('build-css', function () {
     var src = [
-        vendorDir + 'src/node_modules/flag-icon-css/css/flag-icon.min.css',
-        vendorDir + 'src/node_modules/font-awesome/css/font-awesome.min.css ',
-        vendorDir + 'src/node_modules/simple-line-icons/css/simple-line-icons.css',
+        vendorDir + '/src/node_modules/flag-icon-css/css/flag-icon.min.css',
+        vendorDir + '/src/node_modules/font-awesome/css/font-awesome.min.css ',
+        vendorDir + '/src/node_modules/simple-line-icons/css/simple-line-icons.css',
         vendorDir + '/src/scss/style.scss',
         'scss/custom.scss',
     ];

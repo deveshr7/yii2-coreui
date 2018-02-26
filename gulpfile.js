@@ -25,10 +25,21 @@ gulp.task('copy:scss', function () {
     return gulp.src([
         coreuiSourceDir + '/src/scss/**/*',
         '!' + coreuiSourceDir + '/src/scss/style.scss',
-        '!' + coreuiSourceDir + '/src/scss/_custom.scss'
+        '!' + coreuiSourceDir + '/src/scss/_custom.scss',
+        '!' + coreuiSourceDir + '/src/scss/_bootstrap-variables.scss',
+        '!' + coreuiSourceDir + '/src/scss/_core-variables.scss'
     ])
         .pipe(gulp.dest('src/scss'));
 });
+
+gulp.task('copy:example', function () {
+    return gulp.src([
+        coreuiSourceDir + '/src/scss/_bootstrap-variables.scss',
+        coreuiSourceDir + '/src/scss/_core-variables.scss'
+    ])
+        .pipe(gulp.dest('examples/themes/coreui/scss'));
+});
+
 
 gulp.task('copy:js', function () {
     return gulp.src([
@@ -44,5 +55,5 @@ gulp.task('copy:jsViews', function () {
         .pipe(gulp.dest('src/js/views'));
 });
 
-gulp.task('copy', ['copy:img', 'copy:scss', 'copy:js', 'copy:jsViews']);
+gulp.task('copy', ['copy:img', 'copy:scss', 'copy:example', 'copy:js', 'copy:jsViews']);
 gulp.task('serve', ['copy']);
