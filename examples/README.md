@@ -2,7 +2,8 @@
 
 We explain what is to do if you want to use gulp instead of normal yii2 assets.
 
-In the example theme we use the [Yii 2.0 Advanced Application Template](https://github.com/yiisoft/yii2-app-advanced) and [Yii2 User Module](https://github.com/dektrium/yii2-user).
+In the example theme we use the [Yii 2.0 Advanced Application Template](https://github.com/yiisoft/yii2-app-advanced), 
+[Yii2 User Module](https://github.com/dektrium/yii2-user) and [Yii2 RBAC Module](https://github.com/dektrium/yii2-rbac).
 
 1. You have to install [Node.js](https://nodejs.org) on your machine to use the ``npm`` package manager.
 2. Copy ``themes`` folder from ``vendor/kmergen/yii2-coreui-gulp/examples/themes`` to your application ``backend`` directory.
