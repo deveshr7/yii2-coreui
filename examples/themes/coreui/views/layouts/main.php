@@ -11,7 +11,7 @@ $user = Yii::$app->getUser()->getIdentity();
 $profile = $user->profile;
 
 $items = [
-    ['label' => 'Dashboard', 'icon' => 'fa fa-address-book-o', 'url' => ['/']],
+    ['label' => 'Dashboard', 'icon' => 'fa fa-address-book-o', 'url' => ['/dashboard']],
     [
         'label' => 'User',
         'url' => '#',
@@ -35,7 +35,7 @@ $items = [
     <?= Html::cssFile(YII_DEBUG ? '@web/themes/coreui/css/app.css' : '@web/themes/coreui/css/app.min.css?v=' . filemtime(Yii::getAlias('@webroot/themes/coreui/css/app.min.css'))) ?>
     <?php $this->head() ?>
 </head>
-<body class="app header-fixed">
+<body class="app header-fixed<?= isset($this->params['bodyCssClass']) ? " {$this->params['bodyCssClass']}" : '' ?>">
 <?php $this->beginBody() ?>
 <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
@@ -85,7 +85,7 @@ $items = [
         ])
         ?>
 
-        <div class="container-fluid">
+        <div class="container-fluid content-wrapper">
             <?= Alert::widget() ?>
             <?= $content ?>
         </div>

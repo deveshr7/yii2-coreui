@@ -6,6 +6,7 @@
  */
 
 /* @var $this yii\web\View */
+
 /* @var $dataProviderRecentUsers yii\data\ActiveDataProvider */
 
 use yii\widgets\Pjax;
@@ -25,6 +26,5 @@ $this->params['bodyCssClass'] = 'dashboard';
     </div>
 
     <div class="col-md-6">
-
     </div>
 </div>

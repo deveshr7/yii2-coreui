@@ -27,11 +27,9 @@ use yii\helpers\Url;
 </head>
 <?php
 ?>
-<body class="blank-page<?= isset($this->params['bodyClass']) ? " {$this->params['bodyClass']}" : '' ?>">
+<body class="blank-layout<?= isset($this->params['bodyCssClass']) ? " {$this->params['bodyCssClass']}" : '' ?>">
 <?php $this->beginBody() ?>
-<div class="wrapper">
-    <?= $content ?>
-</div>
+<?= $content ?>
 <?= Html::jsFile(YII_DEBUG ? '@web/themes/coreui/js/app.js' : '@web/themes/coreui/js/app.min.js?v=' . filemtime(Yii::getAlias('@webroot/themes/coreui/js/app.min.js'))) ?>
 <?php $this->endBody() ?>
 </body>
