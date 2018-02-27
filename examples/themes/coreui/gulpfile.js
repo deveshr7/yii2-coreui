@@ -1,11 +1,4 @@
 /**
- * KM Websolutions Projects
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2010 KM Websolutions
- * @license http://www.yiiframework.com/license/
- */
-
-/**
  * Yii2-coreui-theme-example
  * This example works with the following file structure:
  *
@@ -109,8 +102,7 @@ gulp.task('build-css', function () {
         vendorDir + '/src/node_modules/flag-icon-css/css/flag-icon.min.css',
         vendorDir + '/src/node_modules/font-awesome/css/font-awesome.min.css ',
         vendorDir + '/src/node_modules/simple-line-icons/css/simple-line-icons.css',
-        vendorDir + '/src/scss/style.scss',
-        'scss/custom.scss',
+        'scss/style.scss',
     ];
 
     if (gutil.env.type === 'production') { //gulp ran with '--type production'
@@ -169,7 +161,7 @@ gulp.task('serve', ['copy', 'build-css', 'build-js']);
 //################################ BrowserSync Task ########################################
 gulp.task('browser-sync', function () {
     browserSync.init({
-        proxy: 'http://url/to/Application'
+        proxy: 'http://yii2develop/backend'
     });
 });
 
