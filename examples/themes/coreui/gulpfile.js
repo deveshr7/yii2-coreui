@@ -1,4 +1,11 @@
 /**
+ * KM Websolutions Projects
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2010 KM Websolutions
+ * @license http://www.yiiframework.com/license/
+ */
+
+/**
  * Yii2-coreui-theme-example
  * This example works with the following file structure:
  *

@@ -1,22 +1,21 @@
 <?php
-/*
- * This file is part of the Dektrium project.
- *
- * (c) Dektrium project <http://github.com/dektrium>
- *
- * For the full copyright and license information, please view the LICENSE.md
- * file that was distributed with this source code.
+/**
+ * KM Websolutions Projects
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2010 KM Websolutions
+ * @license http://www.yiiframework.com/license/
+ */
+
+/**
+ * @var \yii\web\View $this
+ * @var \dektrium\user\models\User $user
+ * @var string $content
  */
 
 use dektrium\user\widgets\Connect;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/**
- * @var yii\web\View $this
- * @var dektrium\user\models\LoginForm $model
- * @var dektrium\user\Module $module
- */
 $this->context->layout = '@app/themes/coreui/views/layouts/blank';
 $this->title = Yii::t('user', 'Sign in');
 $this->params['bodyCssClass'] = 'app flex-row align-items-center';

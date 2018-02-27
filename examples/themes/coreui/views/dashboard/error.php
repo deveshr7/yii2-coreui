@@ -1,4 +1,11 @@
 <?php
+/**
+ * KM Websolutions Projects
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2010 KM Websolutions
+ * @license http://www.yiiframework.com/license/
+ */
+
 /* @var $this yii\web\View */
 /* @var $name string */
 /* @var $message string */
