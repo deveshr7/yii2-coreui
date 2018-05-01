@@ -78,7 +78,7 @@ var vendorDir = '../../../vendor/kmergen/yii2-coreui';
 //################################ Copy Tasks ########################################
 gulp.task('copy:img', function () {
 
-    var src = statPath('img') ? 'img/**/*' : vendorDir + '/src/img/**/*';
+    var src = 'img/**/*';
     fs.removeSync(publicThemeDir + '/img')
     return gulp.src(src)
         .pipe(gulp.dest(publicThemeDir + '/img'));
@@ -131,7 +131,7 @@ gulp.task('build-js', function () {
         vendorDir + '/src/node_modules/bootstrap/dist/js/bootstrap.min.js',
         vendorDir + '/src/node_modules/pace-progress/pace.min.js',
         vendorDir + '/src/node_modules/chart.js/dist/Chart.min.js',
-        vendorDir + '/src/js/app.js',
+        vendorDir + '/src/node_modules/@coreui/coreui/dist/js/coreui.min.js',
         'js/custom.js'
     ];
 
