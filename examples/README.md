@@ -8,7 +8,7 @@ In the example theme we use the [Yii 2.0 Advanced Application Template](https://
 1. You have to install [Node.js](https://nodejs.org) on your machine to use the ``npm`` package manager.
 2. Copy ``themes`` folder from ``vendor/kmergen/yii2-coreui-gulp/examples/themes`` to your application ``backend`` directory.
 3. Run from console the following commands (ensure that you are in the directory where your ``gulpfile.js`` is in normally ``backend/themes/coreui``):
-- ``npm install --save`` that can take a few minutes
+- ``npm install`` that can take a few minutes
 - ``gulp serve``
 
 4. In component section of your config file, map your view files to your theme directory for e.g.
