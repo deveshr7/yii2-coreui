@@ -14,12 +14,12 @@ use yii\grid\GridView;
 use kmergen\widgets\LinkPager;
 
 ?>
+<?php Yii::beginProfile('GridView') ?>
 <div class="card">
     <div class="card-header clearfix">
-        <h3 class="float-left"><?= Yii::t('app', 'Recent Users') ?></h3>
-        <div class="float-right"><a href="<?= Url::to(['recent-users']) ?>"><?= Yii::t('backend', 'Refresh') ?>
-                <i class="fa fa-refresh"></i></a>
-        </div>
+        <h3 class="float-left"><?= Yii::t('app', 'Recent Fische') ?></h3>
+        <div class="float-right"><a href="<?= Url::to(['recent-fische']) ?>"><?= Yii::t('backend', 'Refresh') ?> <i
+                        class="fa fa-refresh"></i></a></div>
     </div>
     <div class="card-body">
         <?php
@@ -30,15 +30,12 @@ use kmergen\widgets\LinkPager;
             'summary' => '',
             'columns' => [
                 'id',
-                'username',
-                'email',
-                'created_at:date'
+                'fisch_art',
+                'created_at:date',
+                'title'
             ],
         ]);
         ?>
     </div>
 </div>
-
-
-
-
+<?php Yii::endProfile('GridView') ?>

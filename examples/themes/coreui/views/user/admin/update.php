@@ -1,4 +1,5 @@
-<?php
+<pphp
+
 /**
  * KM Websolutions Projects
  * @link http://www.yiiframework.com/
@@ -6,13 +7,14 @@
  * @license http://www.yiiframework.com/license/
  */
 
+
+use yii\bootstrap\Nav;
+
 /**
  * @var \yii\web\View $this
  * @var \dektrium\user\models\User $user
  * @var string $content
  */
-
-use yii\bootstrap\Nav;
 
 $this->title = Yii::t('user', 'Update user account');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('user', 'Users'), 'url' => ['index']];

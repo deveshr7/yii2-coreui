@@ -6,16 +6,15 @@
  * @license http://www.yiiframework.com/license/
  */
 
-/**
- * @var \yii\web\View $this
- * @var \dektrium\user\models\User $user
- * @var string $content
- */
-
 use dektrium\user\widgets\Connect;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
+/**
+ * @var yii\web\View $this
+ * @var dektrium\user\models\LoginForm $model
+ * @var dektrium\user\Module $module
+ */
 $this->context->layout = '@app/themes/coreui/views/layouts/blank';
 $this->title = Yii::t('user', 'Sign in');
 $this->params['bodyCssClass'] = 'app flex-row align-items-center';
@@ -65,10 +64,7 @@ $this->params['bodyCssClass'] = 'app flex-row align-items-center';
                             <p>You can only login to Backend if you have access rights. If you not sure send an email
                                 to our Administrator.
                             </p>
-                            <?= Html::a(Yii::t('backend', 'Send Email'), '#', ['class' => 'btn btn-primary active mt-3']) ?>
-                            <!-- If you want to link to frontend you should do it like shown in the link below. You have to declare a urlManagerFrontend component in you backend/config/main-local.php.
-                             For help read this guide https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/topic-link-backend-frontend.md
-                             echo Html::a(Yii::t('backend', 'Send Email'), Yii::$app->urlManagerFrontend->createUrl(['/site/contact']), ['class' => 'btn btn-primary active mt-3']) ?> -->
+                            <?= Html::a(Yii::t('backend', 'Send Email'), Yii::$app->urlManagerFrontend->createUrl(['/site/contact']), ['class' => 'btn btn-primary active mt-3']) ?>
                         </div>
                     </div>
                 </div>
@@ -78,4 +74,8 @@ $this->params['bodyCssClass'] = 'app flex-row align-items-center';
 </div>
 
 
-//endregion
+
+
+
+
+

@@ -6,18 +6,19 @@
  * @license http://www.yiiframework.com/license/
  */
 
-/**
- * @var \yii\web\View $this
- * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \dektrium\user\models\UserSearch $searchModel
- */
-
 use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
 use yii\widgets\Pjax;
 use common\grid\ActionColumn;
+
+
+/**
+ * @var \yii\web\View $this
+ * @var \yii\data\ActiveDataProvider $dataProvider
+ * @var \dektrium\user\models\UserSearch $searchModel
+ */
 
 $this->title = Yii::t('user', 'Manage users');
 $this->params['breadcrumbs'][] = $this->title;
