@@ -8,7 +8,7 @@
  */
 
 
-use yii\bootstrap\Nav;
+use yii\bootstrap4\Nav;
 
 /**
  * @var \yii\web\View $this

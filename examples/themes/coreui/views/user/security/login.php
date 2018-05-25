@@ -8,7 +8,7 @@
 
 use dektrium\user\widgets\Connect;
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap4\ActiveForm;
 
 /**
  * @var yii\web\View $this

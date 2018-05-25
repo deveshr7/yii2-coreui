@@ -6,8 +6,8 @@
  * @license http://www.yiiframework.com/license/
  */
 
-use yii\bootstrap\ActiveForm;
-use yii\bootstrap\Nav;
+use yii\bootstrap4\ActiveForm;
+use yii\bootstrap4\Nav;
 use yii\helpers\Html;
 
 /**
